@@ -64,7 +64,9 @@ const Home = () => {
       <section className="services-section-three">
         <div className="auto-container">
           <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="BullNet Services Section" />
+            <div className="section-icon">
+              <i className="fas fa-cogs"></i>
+            </div>
             <span className="sub-title">WHAT WE DELIVER</span>
             <h2>Present Our Services</h2>
           </div>
@@ -197,15 +199,8 @@ const Home = () => {
             </ul>
             <div className="tab-content">
               <div className={`tab-pane fade ${activePlanTab === 'lan' ? 'show active' : ''}`}>
-                <div className="row align-items-center">
-                  <div className="col-lg-7 image-column">
-                    <div className="image-box">
-                      <figure className="image">
-                        <img src="/images/resource/service-img.png" alt="LAN & Network Solutions" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 content-column">
+                <div className="row justify-content-center">
+                  <div className="col-lg-8 content-column">
                     <div className="inner-column">
                       <h4 className="title">LAN Setup &amp; Network Solutions</h4>
                       <ul className="social-list">
@@ -236,15 +231,8 @@ const Home = () => {
                 </div>
               </div>
               <div className={`tab-pane fade ${activePlanTab === 'cctv' ? 'show active' : ''}`}>
-                <div className="row align-items-center">
-                  <div className="col-lg-7 image-column">
-                    <div className="image-box">
-                      <figure className="image">
-                        <img src="/images/resource/service-img.png" alt="CCTV & Security" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 content-column">
+                <div className="row justify-content-center">
+                  <div className="col-lg-8 content-column">
                     <div className="inner-column">
                       <h4 className="title">CCTV Installation &amp; Surveillance</h4>
                       <ul className="social-list">
@@ -275,15 +263,8 @@ const Home = () => {
                 </div>
               </div>
               <div className={`tab-pane fade ${activePlanTab === 'isp' ? 'show active' : ''}`}>
-                <div className="row align-items-center">
-                  <div className="col-lg-7 image-column">
-                    <div className="image-box">
-                      <figure className="image">
-                        <img src="/images/resource/service-img.png" alt="Internet & ISP" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 content-column">
+                <div className="row justify-content-center">
+                  <div className="col-lg-8 content-column">
                     <div className="inner-column">
                       <h4 className="title">Internet Provider – Retailer &amp; Consultancy</h4>
                       <ul className="social-list">
@@ -314,15 +295,8 @@ const Home = () => {
                 </div>
               </div>
               <div className={`tab-pane fade ${activePlanTab === 'starlink' ? 'show active' : ''}`}>
-                <div className="row align-items-center">
-                  <div className="col-lg-7 image-column">
-                    <div className="image-box">
-                      <figure className="image">
-                        <img src="/images/resource/service-img.png" alt="Starlink & Remote" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 content-column">
+                <div className="row justify-content-center">
+                  <div className="col-lg-8 content-column">
                     <div className="inner-column">
                       <h4 className="title">Starlink Internet Setup &amp; Aggregator</h4>
                       <ul className="social-list">

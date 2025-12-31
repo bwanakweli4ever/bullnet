@@ -16,7 +16,6 @@ const Services = () => {
         'Routing, switching & firewall configuration',
         'Network audits, diagrams & staff training'
       ],
-      image: '/images/resource/service-img.png',
       link: '/services/1'
     },
     {
@@ -30,7 +29,6 @@ const Services = () => {
         'NVR/DVR and remote/mobile access',
         'AI analytics & maintenance contracts'
       ],
-      image: '/images/resource/service-img.png',
       link: '/services/2'
     },
     {
@@ -44,7 +42,6 @@ const Services = () => {
         'Multi‑ISP redundancy & failover',
         'Cost optimization & SLA advisory'
       ],
-      image: '/images/resource/service-img.png',
       link: '/services/3'
     },
     {
@@ -58,7 +55,6 @@ const Services = () => {
         'Starlink + Fiber/LTE failover designs',
         'Aggregation, monitoring & billing support'
       ],
-      image: '/images/resource/service-img.png',
       link: '/services/4'
     }
   ]
@@ -83,7 +79,9 @@ const Services = () => {
       <section className="services-cards-section">
         <div className="auto-container">
           <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="BullNet Services" />
+            <div className="section-icon">
+              <i className="fas fa-network-wired"></i>
+            </div>
             <span className="sub-title">BULLNET CORE CAPABILITIES</span>
             <h2>Our Services</h2>
             <p className="section-description">

@@ -246,11 +246,69 @@
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  .why-choose-us-section {
+    padding: 40px 0 15px 0;
+  }
+
+  .why-choose-us-section .sec-title-v4 h2 {
+    font-size: 28px;
+  }
+
+  .holderCircle {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto 0;
+  }
+
+  .round {
+    left: 30px;
+    top: 30px;
+    width: 340px;
+    height: 340px;
+  }
+
+  .dotCircle .itemDot {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 26px;
+  }
+
+  .contentCircle {
+    width: 220px;
+    top: 120px;
+    line-height: 220px;
+  }
+
+  .contentCircle .CirItem i {
+    font-size: 150px;
+    margin-left: -75px;
+  }
+
+  .title-box .title span {
+    font-size: 28px;
+  }
+
+  .title-box p {
+    font-size: 15px;
+    padding: 0 18px;
+  }
+}
+
 @media only screen and (min-width: 300px) and (max-width: 599px) {
+  .why-choose-us-section {
+    padding: 35px 0 10px 0;
+  }
+
+  .why-choose-us-section .sec-title-v4 h2 {
+    font-size: 24px;
+  }
+
   .holderCircle {
     width: 300px;
     height: 300px;
-    margin: 40px auto;
+    margin: 15px auto 0;
   }
 
   .round {
@@ -261,15 +319,15 @@
   }
 
   .dotCircle .itemDot {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 22px;
   }
 
   .contentCircle {
     width: 180px;
-    top: 100px;
+    top: 90px;
     line-height: 180px;
   }
 
@@ -279,16 +337,13 @@
   }
 
   .title-box .title span {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .title-box p {
-    font-size: 14px;
-    padding: 0 15px;
-  }
-
-  .why-choose-us-section .sec-title-v4 h2 {
-    font-size: 28px;
+    font-size: 13px;
+    padding: 0 12px;
+    line-height: 1.8em;
   }
 }
 

@@ -29,6 +29,58 @@
   margin-bottom: 60px;
 }
 
+/* Section Icon Styling */
+.services-cards-section .sec-title-v4 .section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(1, 0, 80, 0.25);
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.services-cards-section .sec-title-v4 .section-icon i {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-cards-section .sec-title-v4 .section-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .services-cards-section .sec-title-v4 .section-icon i {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-cards-section .sec-title-v4 .section-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+
+  .services-cards-section .sec-title-v4 .section-icon i {
+    font-size: 28px;
+  }
+}
+
 .services-cards-section .sec-title-v4 .sub-title {
   color: #01eb00;
   font-weight: 700;

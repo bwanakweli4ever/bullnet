@@ -113,16 +113,20 @@ const Header = () => {
                 Get Quote
               </Link>
               <div className="mobile-nav-toggler" onClick={() => setIsMobileMenuOpen(true)}>
-                <span className="icon lnr-icon-bars"></span>
+                <i className="fas fa-bars"></i>
               </div>
             </div>
           </div>
         </div>
       </header>
 
+      {/* Mobile Menu Backdrop */}
+      {isMobileMenuOpen && (
+        <div className="menu-backdrop" onClick={() => setIsMobileMenuOpen(false)}></div>
+      )}
+
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'menu-open' : ''}`}>
-        <div className="menu-backdrop" onClick={() => setIsMobileMenuOpen(false)}></div>
         <nav className="menu-box">
           <div className="upper-box">
             <div className="nav-logo">
@@ -131,7 +135,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="close-btn" onClick={() => setIsMobileMenuOpen(false)}>
-              <i className="icon fa fa-times"></i>
+              <i className="fas fa-times"></i>
             </div>
           </div>
 
@@ -148,21 +152,21 @@ const Header = () => {
           <ul className="contact-list-one">
             <li>
               <div className="contact-info-box">
-                <i className="icon lnr-icon-phone-handset"></i>
+                <i className="fas fa-phone"></i>
                 <span className="title">Call Now</span>
                 <a href="tel:+250783611372">+250 783 611 372</a>
               </div>
             </li>
             <li>
               <div className="contact-info-box">
-                <span className="icon lnr-icon-envelope1"></span>
+                <i className="fas fa-envelope"></i>
                 <span className="title">Send Email</span>
                 <a href="mailto:bullnetltd@gmail.com">bullnetltd@gmail.com</a>
               </div>
             </li>
             <li>
               <div className="contact-info-box">
-                <span className="icon lnr-icon-clock"></span>
+                <i className="fas fa-clock"></i>
                 <span className="title">Working Hours</span>
                 Mon - Sat 8:00 - 6:30, Sunday - CLOSED
               </div>
