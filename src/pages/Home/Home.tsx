@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO/SEO'
-import IconBox from '../../components/IconBox/IconBox'
 import HeroSlider from '../../components/HeroSlider/HeroSlider'
 import ProductsCarousel from '../../components/ProductsCarousel/ProductsCarousel'
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs'
