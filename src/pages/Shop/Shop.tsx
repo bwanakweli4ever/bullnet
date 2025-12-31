@@ -15,14 +15,15 @@ const Shop = () => {
   const [activeFilter, setActiveFilter] = useState('all')
 
   const products: Product[] = [
-    { id: '1', name: 'Wi-Fi Router', price: '$52.00', image: '/images/resource/products/2.jpg', category: 'network' },
-    { id: '2', name: 'Network Switch', price: '$85.00', image: '/images/resource/products/1.jpg', category: 'network' },
-    { id: '3', name: 'IP CCTV Camera', price: '$120.00', image: '/images/resource/products/3.jpg', category: 'cctv' },
-    { id: '4', name: 'NVR System', price: '$280.00', image: '/images/resource/products/4.jpg', category: 'cctv' },
-    { id: '5', name: 'Cat6 Network Cable', price: '$34.00', image: '/images/resource/products/5.jpg', category: 'cables' },
-    { id: '6', name: 'Access Point', price: '$95.00', image: '/images/resource/products/6.jpg', category: 'network' },
-    { id: '7', name: 'UPS Power Backup', price: '$150.00', image: '/images/resource/products/7.jpg', category: 'computer' },
-    { id: '8', name: 'Starlink Kit', price: '$599.00', image: '/images/resource/products/8.jpg', category: 'starlink' },
+    { id: 'usb-hub-11in1', name: 'Type-C to HDTV 11-in-1 Hub', price: '25,000 RWF', image: '/images/products/usb-hub.jpg', category: 'computer' },
+    { id: 'huawei-b315', name: 'Huawei B315 CPE LTE 4G Wireless Router', price: '75,000 RWF', image: '/images/products/wireless-router-black.webp', category: 'network' },
+    { id: 'hp-m10-mouse', name: 'HP M10 Wired Mouse', price: '3,500 RWF', image: '/images/products/mouse.png', category: 'computer' },
+    { id: 'g550-gaming-mouse', name: 'G550 Wireless Gaming Mouse', price: '15,000 RWF', image: '/images/products/mecha_cool_mouse.jpg', category: 'computer' },
+    { id: 'xikkart-rgb-mouse', name: 'XIKKART RGB Gaming Mouse', price: '12,000 RWF', image: '/images/products/xikkart_mouse.webp', category: 'computer' },
+    { id: 'hp-65w-adapter', name: 'HP 65W USB-C Power Adapter', price: '25,000 RWF', image: '/images/products/usb-c-power-adpter.jpg', category: 'computer' },
+    { id: 'dell-65w-adapter', name: 'Dell 65W USB Type-C Adapter', price: '25,000 RWF', image: '/images/products/65w-ctype.jpg', category: 'computer' },
+    { id: 'lenovo-90w-adapter', name: 'Lenovo 90W AC Adapter', price: '8,000 RWF', image: '/images/products/6-1536x1536.jpg', category: 'computer' },
+    { id: 'hp-150w-charger', name: 'HP 150W Laptop Charger', price: '8,000 RWF', image: '/images/products/hp-150w-7.4.png', category: 'computer' },
   ]
 
   const handleWhatsAppOrder = (productName: string, productPrice: string) => {

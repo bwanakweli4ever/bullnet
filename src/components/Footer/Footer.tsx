@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4 copyright-text text-center text-lg-start">
-              <p>Copyright © 2024 BullNet. All rights reserved.</p>
+              <p>Copyright © 2024 <strong>BullNet</strong>. All rights reserved.</p>
             </div>
             <div className="col-md-4 social-column text-center">
               <ul className="social-links">

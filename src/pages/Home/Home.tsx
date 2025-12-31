@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO/SEO'
 import IconBox from '../../components/IconBox/IconBox'
 import HeroSlider from '../../components/HeroSlider/HeroSlider'
+import ProductsCarousel from '../../components/ProductsCarousel/ProductsCarousel'
+import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs'
 import './Home.css'
 
 const Home = () => {
@@ -64,41 +66,71 @@ const Home = () => {
           <div className="sec-title-v4 text-center wow fadeInUp">
             <img src="/images/resource/sec-img.png" alt="BullNet Services Section" />
             <span className="sub-title">WHAT WE DELIVER</span>
-            <h2>Explore BullNet Services</h2>
+            <h2>Present Our Services</h2>
           </div>
           <div className="row">
-            <div className="service-block-three col-lg-3 col-md-6 col-sm-12">
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-wifi-router"></i></div>
-                <h4 className="title">LAN &amp; Network Setup</h4>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="service_box">
+                <div className="service_bg_pattern"></div>
+                <div className="service_icon">
+                  <i className="flaticon-wifi-router"></i>
+                </div>
+                <h3>LAN &amp; Network Setup</h3>
                 <p>Structured cabling, LAN/WAN design, Wi‑Fi planning and secure routing for offices, homes and campuses.</p>
+                <ul className="service_features">
+                  <li><i className="fa fa-check"></i> Structured Cabling</li>
+                  <li><i className="fa fa-check"></i> Wi‑Fi Planning</li>
+                  <li><i className="fa fa-check"></i> Secure Routing</li>
+                </ul>
+                <div className="service_number">01</div>
               </div>
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-router"></i></div>
-                <h4 className="title">CCTV &amp; Access Control</h4>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="service_box">
+                <div className="service_bg_pattern"></div>
+                <div className="service_icon">
+                  <i className="flaticon-router"></i>
+                </div>
+                <h3>CCTV &amp; Access Control</h3>
                 <p>Complete surveillance systems with remote viewing, AI analytics and preventive maintenance options.</p>
+                <ul className="service_features">
+                  <li><i className="fa fa-check"></i> Remote Viewing</li>
+                  <li><i className="fa fa-check"></i> AI Analytics</li>
+                  <li><i className="fa fa-check"></i> Maintenance</li>
+                </ul>
+                <div className="service_number">02</div>
               </div>
             </div>
-            <div className="service-block-three col-lg-6 col-md-6 col-sm-12">
-              <div className="image-box wow zoomIn">
-                <figure className="image">
-                  <Link to="/services">
-                    <img src="/images/resource/service4-3.png" alt="Services" />
-                  </Link>
-                </figure>
-                <Link to="/services" className="read-more">View All Services</Link>
-              </div>
-            </div>
-            <div className="service-block-three col-lg-3 col-md-6 col-sm-12">
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-internet"></i></div>
-                <h4 className="title">ISP Retail &amp; Consultancy</h4>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="service_box">
+                <div className="service_bg_pattern"></div>
+                <div className="service_icon">
+                  <i className="flaticon-internet"></i>
+                </div>
+                <h3>ISP Retail &amp; Consultancy</h3>
                 <p>Advisory, design and provisioning of business and home internet with multi‑ISP failover and SLA-backed options.</p>
+                <ul className="service_features">
+                  <li><i className="fa fa-check"></i> Multi-ISP Failover</li>
+                  <li><i className="fa fa-check"></i> SLA-Backed</li>
+                  <li><i className="fa fa-check"></i> Business &amp; Home</li>
+                </ul>
+                <div className="service_number">03</div>
               </div>
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-speedometer"></i></div>
-                <h4 className="title">Starlink &amp; Remote Links</h4>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+              <div className="service_box">
+                <div className="service_bg_pattern"></div>
+                <div className="service_icon">
+                  <i className="flaticon-speedometer"></i>
+                </div>
+                <h3>Starlink &amp; Remote Links</h3>
                 <p>Starlink setup, aggregation and integration with your LAN to keep even the most remote locations online.</p>
+                <ul className="service_features">
+                  <li><i className="fa fa-check"></i> Starlink Setup</li>
+                  <li><i className="fa fa-check"></i> LAN Integration</li>
+                  <li><i className="fa fa-check"></i> Remote Locations</li>
+                </ul>
+                <div className="service_number">04</div>
               </div>
             </div>
           </div>
@@ -324,9 +356,16 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Products Carousel Section */}
+      <ProductsCarousel />
     </>
   )
 }
 
 export default Home
+
 
