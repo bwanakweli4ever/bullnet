@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../../components/SEO/SEO'
 import IconBox from '../../components/IconBox/IconBox'
 import HeroSlider from '../../components/HeroSlider/HeroSlider'
 import './Home.css'
@@ -9,6 +10,12 @@ const Home = () => {
 
   return (
     <>
+      <SEO
+        title="BullNet | Technology Solutions & Broadband Services in Rwanda"
+        description="BullNet provides comprehensive technology solutions including LAN setup, network solutions, CCTV installation, ISP consultancy, and Starlink connectivity services. Your trusted technology partner in Rwanda."
+        keywords="BullNet, technology solutions Rwanda, broadband services, LAN setup, network solutions, CCTV installation, ISP consultancy, Starlink Rwanda, IT services Kigali"
+        url="https://bullnet.rw/"
+      />
       {/* Hero Slider */}
       <HeroSlider />
 
@@ -55,7 +62,7 @@ const Home = () => {
       <section className="services-section-three">
         <div className="auto-container">
           <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="" />
+            <img src="/images/resource/sec-img.png" alt="BullNet Services Section" />
             <span className="sub-title">WHAT WE DELIVER</span>
             <h2>Explore BullNet Services</h2>
           </div>

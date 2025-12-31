@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../../components/SEO/SEO'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import './About.css'
 
@@ -30,6 +31,12 @@ const About = () => {
 
   return (
     <>
+      <SEO
+        title="About BullNet | Your Technology Solutions Partner"
+        description="Learn about BullNet, your trusted technology solutions partner in Rwanda. We provide end-to-end digital infrastructure, connectivity, and security solutions for businesses and institutions."
+        keywords="About BullNet, technology company Rwanda, IT solutions provider, network services, technology partner"
+        url="https://bullnet.rw/about"
+      />
       <PageTitle
         title="About Us"
         breadcrumbs={[

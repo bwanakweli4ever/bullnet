@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SEO from '../../components/SEO/SEO'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import './Services.css'
 
@@ -64,6 +65,12 @@ const Services = () => {
 
   return (
     <>
+      <SEO
+        title="Our Services | LAN Setup, CCTV, ISP & Starlink Solutions"
+        description="Explore BullNet's comprehensive technology services: LAN setup & network solutions, CCTV installation & surveillance, ISP consultancy, and Starlink connectivity services in Rwanda."
+        keywords="LAN setup Rwanda, network solutions, CCTV installation, ISP services, Starlink Rwanda, technology services, IT solutions"
+        url="https://bullnet.rw/services"
+      />
       <PageTitle
         title="Our Services"
         breadcrumbs={[
@@ -76,7 +83,7 @@ const Services = () => {
       <section className="services-cards-section">
         <div className="auto-container">
           <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="" />
+            <img src="/images/resource/sec-img.png" alt="BullNet Services" />
             <span className="sub-title">BULLNET CORE CAPABILITIES</span>
             <h2>Our Services</h2>
             <p className="section-description">

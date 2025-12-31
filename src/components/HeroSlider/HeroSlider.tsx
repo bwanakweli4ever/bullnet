@@ -100,7 +100,7 @@ const HeroSlider = () => {
               className={`slide ${currentSlide === index ? 'active' : ''}`}
             >
               <div className="slide-background">
-                <img src={slide.backgroundImage} alt="" className="slide-bg-image" />
+                <img src={slide.backgroundImage} alt={`${slide.title} - ${slide.subtitle} background`} className="slide-bg-image" />
                 <div className="slide-overlay"></div>
               </div>
 

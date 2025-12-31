@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SEO from '../../components/SEO/SEO'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import './Contact.css'
 
@@ -75,6 +76,12 @@ _Submitted via BullNet Website_`
 
   return (
     <>
+      <SEO
+        title="Contact BullNet | Get in Touch for Technology Solutions"
+        description="Contact BullNet for your technology needs. Located in Kigali, Rwanda. Call +250 783 611 372 or email bullnetltd@gmail.com. Get a quote for LAN setup, CCTV, ISP services, and Starlink solutions."
+        keywords="Contact BullNet, BullNet contact, technology services Rwanda, IT support Kigali, network solutions contact"
+        url="https://bullnet.rw/contact"
+      />
       <PageTitle
         title="Contact Us"
         breadcrumbs={[
@@ -88,7 +95,7 @@ _Submitted via BullNet Website_`
         <div className="container py-0">
           <div className="row">
             <div className="col-xl-5 col-md-6 col-sm-12 d-none d-xl-block">
-              <img className="contact-img-1 wow fadeInUp" src="/images/resource/contact-img-1.png" alt="" />
+              <img className="contact-img-1 wow fadeInUp" src="/images/resource/contact-img-1.png" alt="Contact BullNet for technology solutions" />
             </div>
             <div className="form-column col-xl-7">
               <div className="inner-column ms-0 wow fadeInUp mt-0">
@@ -320,32 +327,32 @@ _Submitted via BullNet Website_`
           <div className="content-box client">
             <div className="image-box wow fadeIn">
               <figure className="image">
-                <img src="/images/resource/client2-1.png" alt="" />
+                <img src="/images/resource/client2-1.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
             <div className="image-box wow fadeIn" data-wow-delay="100ms">
               <figure className="image">
-                <img src="/images/resource/client2-2.png" alt="" />
+                <img src="/images/resource/client2-2.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
             <div className="image-box wow fadeIn" data-wow-delay="200ms">
               <figure className="image">
-                <img src="/images/resource/client2-3.png" alt="" />
+                <img src="/images/resource/client2-3.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
             <div className="image-box wow fadeIn" data-wow-delay="300ms">
               <figure className="image">
-                <img src="/images/resource/client2-4.png" alt="" />
+                <img src="/images/resource/client2-4.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
             <div className="image-box wow fadeIn" data-wow-delay="400ms">
               <figure className="image">
-                <img src="/images/resource/client2-5.png" alt="" />
+                <img src="/images/resource/client2-5.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
             <div className="image-box wow fadeIn" data-wow-delay="500ms">
               <figure className="image">
-                <img src="/images/resource/client2-6.png" alt="" />
+                <img src="/images/resource/client2-6.png" alt="Broadband Provider Partner" />
               </figure>
             </div>
           </div>
