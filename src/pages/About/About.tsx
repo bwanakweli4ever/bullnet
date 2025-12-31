@@ -3,6 +3,31 @@ import PageTitle from '../../components/PageTitle/PageTitle'
 import './About.css'
 
 const About = () => {
+  const values = [
+    {
+      icon: 'flaticon-services',
+      title: 'Excellence',
+      description: 'We deliver top-quality solutions that exceed expectations'
+    },
+    {
+      icon: 'flaticon-globe-grid',
+      title: 'Innovation',
+      description: 'Staying ahead with cutting-edge technology and best practices'
+    },
+    {
+      icon: 'flaticon-streaming',
+      title: 'Reliability',
+      description: 'Consistent, dependable service you can count on'
+    }
+  ]
+
+  const stats = [
+    { number: '500+', label: 'Projects Completed' },
+    { number: '200+', label: 'Happy Clients' },
+    { number: '10+', label: 'Years Experience' },
+    { number: '24/7', label: 'Support Available' }
+  ]
+
   return (
     <>
       <PageTitle
@@ -13,188 +38,134 @@ const About = () => {
         ]}
       />
 
-      {/* about section */}
-      <section className="about-section-four">
+      {/* Hero About Section */}
+      <section className="about-hero-section">
+        <div className="auto-container">
+          <div className="about-hero-content">
+            <div className="about-hero-text">
+              <span className="sub-title">WHO WE ARE</span>
+              <h1 className="main-title">Your End-to-End Technology Partner</h1>
+              <p className="lead-text">
+                BullNet brings together networking, security, internet and hardware expertise to build reliable digital foundations for your business. From structured cabling and LAN design to CCTV, Starlink and ISP consultancy, we deliver solutions that are secure, scalable and performance-driven.
+              </p>
+              <p className="description-text">
+                We design, deploy and manage secure connectivity, security and IT infrastructure for homes, SMEs, enterprises and institutions. Our team combines years of experience with a passion for technology to provide solutions that work seamlessly and grow with your business.
+              </p>
+              <div className="about-cta">
+                <Link to="/contact" className="btn-primary">Get in Touch</Link>
+                <Link to="/services" className="btn-secondary">Our Services</Link>
+              </div>
+            </div>
+            <div className="about-hero-image">
+              <div className="image-wrapper">
+                <img src="/images/about-us.webp" alt="BullNet Professional Team Member" className="main-image" />
+                <div className="floating-card card-1">
+                  <div className="card-icon">
+                    <i className="flaticon-wifi-router"></i>
+                  </div>
+                  <div className="card-text">
+                    <span className="card-number">500+</span>
+                    <span className="card-label">Networks Deployed</span>
+                  </div>
+                </div>
+                <div className="floating-card card-2">
+                  <div className="card-icon">
+                    <i className="flaticon-router"></i>
+                  </div>
+                  <div className="card-text">
+                    <span className="card-number">200+</span>
+                    <span className="card-label">Happy Clients</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="about-stats-section">
+        <div className="auto-container">
+          <div className="stats-grid">
+            {stats.map((stat, index) => (
+              <div key={index} className="stat-card">
+                <div className="stat-number">{stat.number}</div>
+                <div className="stat-label">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision Section */}
+      <section className="mission-section">
+        <div className="auto-container">
+          <div className="mission-content">
+            <div className="mission-card">
+              <div className="mission-icon">
+                <i className="flaticon-globe-grid"></i>
+              </div>
+              <h3 className="mission-title">Our Mission</h3>
+              <p className="mission-text">
+                To empower businesses and institutions with reliable, secure, and scalable technology solutions that drive growth and innovation. We strive to be the trusted partner that transforms digital infrastructure challenges into opportunities.
+              </p>
+            </div>
+            <div className="mission-card">
+              <div className="mission-icon">
+                <i className="flaticon-streaming"></i>
+              </div>
+              <h3 className="mission-title">Our Vision</h3>
+              <p className="mission-text">
+                To become the leading technology solutions provider in the region, known for excellence, innovation, and unwavering commitment to client success. We envision a future where every business has access to world-class connectivity and security.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="values-section">
         <div className="auto-container">
           <div className="sec-title-v4 text-center">
-            <div className="icon-box wow fadeInUp"><i className="flaticon-wifi-1"></i></div>
-            <h2 className="wow fadeInUp" data-wow-delay="100ms">BullNet Website Development &amp; Technology Solutions</h2>
-            <p className="wow fadeInUp" data-wow-delay="200ms">We design, deploy and manage secure connectivity, security and IT infrastructure for homes, SMEs, enterprises and institutions.</p>
+            <span className="sub-title">OUR CORE VALUES</span>
+            <h2>What Drives Us</h2>
+            <p className="section-description">
+              The principles that guide everything we do
+            </p>
           </div>
-          <div className="row">
-            <div className="content-column col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-column wow fadeInLeft">
-                <span className="sub-title">WHO WE ARE</span>
-                <h2 className="title">Your End-to-End <br />Technology Partner.</h2>
-                <p className="text">BullNet brings together networking, security, internet and hardware expertise to build reliable digital foundations for your business. From structured cabling and LAN design to CCTV, Starlink and ISP consultancy, we deliver solutions that are secure, scalable and performance-driven.</p>
-                <div className="row">
-                  <div className="about-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="icon-box">
-                        <i className="flaticon-services"></i>
-                        <h6 className="title">LAN Setup &amp; <br />Network Solutions</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="about-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="icon-box">
-                        <i className="flaticon-globe-grid"></i>
-                        <h6 className="title">Internet Service <br />Consultancy</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="about-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="icon-box">
-                        <i className="flaticon-streaming"></i>
-                        <h6 className="title">CCTV, Starlink &amp; <br />Security Systems</h6>
-                      </div>
-                    </div>
+          <div className="values-grid">
+            {values.map((value, index) => (
+              <div key={index} className="value-card">
+                <div className="value-icon">
+                  <div className="icon-box">
+                    <i className={value.icon}></i>
                   </div>
                 </div>
+                <h4 className="value-title">{value.title}</h4>
+                <p className="value-description">{value.description}</p>
               </div>
-            </div>
-            <div className="image-column col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-column">
-                <div className="image-box">
-                  <figure className="image-1 wow fadeInRight"><img src="/images/resource/about4-7.png" alt="" /></figure>
-                  <figure className="image-2 wow zoomIn"><img src="/images/resource/about4-8.png" alt="" /></figure>
-                  <figure className="image-3 wow zoomIn" data-wow-delay="300ms"><img src="/images/resource/about4-9.png" alt="" /></figure>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
-      {/* End about section */}
 
-      {/* deals section */}
-      <section className="deals-section-v3">
+      {/* CTA Section */}
+      <section className="about-cta-section">
         <div className="auto-container">
-          <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="" />
-            <span className="sub-title">WHY CLIENTS CHOOSE BULLNET</span>
-            <h2>Connectivity, Security &amp; IT Under One Roof</h2>
-          </div>
-          <div className="row">
-            <div className="deals-block-v3 col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-box wow fadeInLeft">
-                <h6 className="title">LAN &amp; Wi‑Fi Network <br />Design and Deployment</h6>
-                <div className="social-list">
-                  <div className="icon-box">
-                    <div className="icon"><i className="flaticon-upload"></i></div>
-                    <h6 className="title">Structured Cabling</h6>
-                  </div>
-                  <div className="icon-box">
-                    <div className="icon"><i className="flaticon-globe-grid"></i></div>
-                    <h6 className="title">Secure VLAN Design</h6>
-                  </div>
-                  <div className="icon-box">
-                    <div className="icon"><i className="flaticon-tv-monitor"></i></div>
-                    <h6 className="title">Remote Monitoring</h6>
-                  </div>
-                </div>
-                <div className="btn-box">
-                  <Link to="/contact" className="read-more">Request Network Assessment</Link>
-                </div>
-                <div className="image-box-v2">
-                  <figure className="image"><img src="/images/resource/deals3-4.png" alt="" /></figure>
-                </div>
-              </div>
-            </div>
-            <div className="deals-block-v3 col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-box-v2 wow fadeInUp">
-                <div className="content-box">
-                  <h6 className="title">CCTV &amp; Surveillance <br />for Safer Spaces</h6>
-                  <p>IP and analog cameras, NVR/DVR setup, access control and AI-based analytics for homes, offices and campuses.</p>
-                  <Link to="/services" className="read-more"><i className="fa-solid fa-arrow-right"></i>Learn More</Link>
-                </div>
-                <div className="image-box-v3">
-                  <figure className="image"><img src="/images/resource/deals3-5.png" alt="" /></figure>
-                </div>
-              </div>
-              <div className="inner-box-v2 wow fadeInUp" data-wow-delay="200ms">
-                <div className="content-box">
-                  <h6 className="title">Starlink &amp; Remote <br />Connectivity</h6>
-                  <p>Starlink installation, aggregation and failover designs that keep remote branches and sites online.</p>
-                  <Link to="/services" className="read-more"><i className="fa-solid fa-arrow-right"></i>Learn More</Link>
-                </div>
-                <div className="image-box-v3">
-                  <figure className="image"><img src="/images/resource/deals3-6.png" alt="" /></figure>
-                </div>
-              </div>
-            </div>
-            <div className="deals-block-v3 col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-box-v4 wow fadeInLeft">
-                <h2 className="title">Award-Winning <br />Broadband You'll Love</h2>
-                <p>let you know about all the awards we've won in 2023</p>
-              </div>
-            </div>
-            <div className="deals-block-v3 col-lg-6 col-md-12 col-sm-12">
-              <div className="inner-box-v4">
-                <div className="image-box">
-                  <figure className="image wow fadeIn"><img src="/images/resource/deals3-8.png" alt="" /></figure>
-                  <figure className="image wow fadeIn" data-wow-delay="200ms"><img src="/images/resource/deals3-9.png" alt="" /></figure>
-                  <figure className="image wow fadeIn" data-wow-delay="300ms"><img src="/images/resource/deals3-10.png" alt="" /></figure>
-                </div>
-              </div>
+          <div className="cta-content">
+            <h2 className="cta-title">Ready to Transform Your Technology Infrastructure?</h2>
+            <p className="cta-text">
+              Let's discuss how BullNet can help your business thrive with reliable, secure, and scalable technology solutions.
+            </p>
+            <div className="cta-buttons">
+              <Link to="/contact" className="btn-primary-large">Get Started Today</Link>
+              <Link to="/services" className="btn-secondary-large">Explore Services</Link>
             </div>
           </div>
         </div>
       </section>
-      {/* End deals section */}
-
-      {/* services-section-three */}
-      <section className="services-section-three">
-        <div className="auto-container">
-          <div className="sec-title-v4 text-center wow fadeInUp">
-            <img src="/images/resource/sec-img.png" alt="" />
-            <span className="sub-title">WHAT WE DELIVER</span>
-            <h2>Explore BullNet Services</h2>
-          </div>
-          <div className="row">
-            <div className="service-block-three col-lg-3 col-md-6 col-sm-12">
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-wifi-router"></i></div>
-                <h4 className="title">LAN &amp; Network Setup</h4>
-                <p>Structured cabling, LAN/WAN design, Wi‑Fi planning and secure routing for offices, homes and campuses.</p>
-              </div>
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-router"></i></div>
-                <h4 className="title">CCTV &amp; Access Control</h4>
-                <p>Complete surveillance systems with remote viewing, AI analytics and preventive maintenance options.</p>
-              </div>
-            </div>
-            <div className="service-block-three col-lg-6 col-md-6 col-sm-12">
-              <div className="image-box wow zoomIn">
-                <figure className="image">
-                  <Link to="/services">
-                    <img src="/images/resource/service4-3.png" alt="" />
-                  </Link>
-                </figure>
-                <Link to="/services" className="read-more">View All Services</Link>
-              </div>
-            </div>
-            <div className="service-block-three col-lg-3 col-md-6 col-sm-12">
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-internet"></i></div>
-                <h4 className="title">ISP Retail &amp; Consultancy</h4>
-                <p>Advisory, design and provisioning of business and home internet with multi‑ISP failover and SLA-backed options.</p>
-              </div>
-              <div className="inner-box">
-                <div className="icon-box"><i className="flaticon-speedometer"></i></div>
-                <h4 className="title">Starlink &amp; Remote Links</h4>
-                <p>Starlink setup, aggregation and integration with your LAN to keep even the most remote locations online.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End services-section-three */}
     </>
   )
 }
 
 export default About
-
