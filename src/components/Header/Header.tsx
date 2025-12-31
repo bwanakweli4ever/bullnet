@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
-  const [isSticky, setIsSticky] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
 
@@ -11,7 +10,6 @@ const Header = () => {
     const handleScroll = () => {
       const windowpos = window.scrollY || window.pageYOffset
       const shouldShowSticky = windowpos > 100
-      setIsSticky(shouldShowSticky)
       
       // Get elements
       const stickyHeader = document.querySelector('.sticky-header') as HTMLElement
