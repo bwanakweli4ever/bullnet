@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.kodesolution.com/2023/satnet-html/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Dec 2025 23:20:45 GMT -->
+<head>
+<meta charset="utf-8">
+<title>BullNet | Contact Us</title>
+<!-- Stylesheets -->
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="css/slick-theme.css" rel="stylesheet">
+<link href="css/select2.min.css" rel="stylesheet">
+<link href="css/swipebox.min.css" rel="stylesheet">
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Custom Logo Size & Brand Colors -->
+<style>
+	/* Regular header - dark logo - Reduced size */
+	.main-header .logo img {
+		max-width: 120px;
+		height: auto;
+		transition: all 0.3s ease;
+	}
+	
+	/* Sticky header & Footer - white logo - Reduced size */
+	.sticky-header .logo img,
+	.mobile-menu .nav-logo img,
+	.footer-title img {
+		max-width: 120px;
+		height: auto;
+		transition: all 0.3s ease;
+	}
+	
+	@media (max-width: 991px) {
+		.main-header .logo img {
+			max-width: 100px;
+		}
+		.sticky-header .logo img,
+		.mobile-menu .nav-logo img {
+			max-width: 100px;
+		}
+	}
+	
+	/* Glassmorphism Navigation Menu - Transparent Glass Look - Centered */
+	.header-style-four .header-lower,
+	.main-header .header-lower {
+		background: rgb(255 255 255) !important;
+		backdrop-filter: blur(20px) !important;
+		-webkit-backdrop-filter: blur(20px) !important;
+		border-radius: 20px !important;
+		border: 1px solid rgba(255, 255, 255, 0.2) !important;
+		box-shadow: 0 8px 32px 0 rgba(1, 0, 80, 0.15),
+					0 4px 16px 0 rgba(1, 235, 0, 0.1),
+					inset 0 1px 0 0 rgba(255, 255, 255, 0.2) !important;
+		margin: 10px auto !important;
+		max-width: 95% !important;
+		width: calc(100% - 30px) !important;
+		position: relative !important;
+	}
+	
+	/* Add subtle gradient overlay */
+	.header-style-four .header-lower::before,
+	.main-header .header-lower::before {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		background: linear-gradient(135deg, rgba(1, 0, 80, 0.03) 0%, rgba(1, 235, 0, 0.02) 100%) !important;
+		pointer-events: none !important;
+		z-index: 0 !important;
+		border-radius: 20px !important;
+	}
+	
+	/* Ensure content is above overlay */
+	.header-style-four .header-lower > *,
+	.main-header .header-lower > * {
+		position: relative !important;
+		z-index: 1 !important;
+	}
+	
+	/* Navigation menu items - elegant styling - Smaller size */
+	.header-style-four .navigation > li > a,
+	.main-header .navigation > li > a {
+		color: #333 !important;
+		font-weight: 500 !important;
+		font-size: 14px !important;
+		transition: all 0.3s ease !important;
+		padding: 10px 15px !important;
+		position: relative !important;
+	}
+	
+	/* Sticky header navigation - smaller */
+	.sticky-header .navigation > li > a {
+		font-size: 14px !important;
+		padding: 10px 15px !important;
+	}
+	
+	.header-style-four .navigation > li > a::after,
+	.main-header .navigation > li > a::after {
+		content: "" !important;
+		position: absolute !important;
+		bottom: 10px !important;
+		left: 50% !important;
+		transform: translateX(-50%) scaleX(0) !important;
+		width: 60% !important;
+		height: 2px !important;
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+		transition: transform 0.3s ease !important;
+		border-radius: 2px !important;
+	}
+	
+	.header-style-four .navigation > li > a:hover::after,
+	.header-style-four .navigation > li.current > a::after,
+	.main-header .navigation > li > a:hover::after,
+	.main-header .navigation > li.current > a::after {
+		transform: translateX(-50%) scaleX(1) !important;
+	}
+	
+	.header-style-four .navigation > li > a:hover,
+	.header-style-four .navigation > li.current > a,
+	.main-header .navigation > li > a:hover,
+	.main-header .navigation > li.current > a {
+		color: #010050 !important;
+	}
+	
+	/* Sticky header glass effect with rounded rectangle - Centered - White logo - Brand Color */
+	.sticky-header {
+		background: #010050 !important;
+		backdrop-filter: blur(30px) saturate(180%) !important;
+		-webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+		border: 1px solid rgba(255, 255, 255, 0.25) !important;
+		border-radius: 20px !important;
+		margin: 10px auto !important;
+		max-width: 95% !important;
+		width: calc(100% - 30px) !important;
+		box-shadow: 0 8px 32px 0 rgba(2, 0, 112, 0.1),
+					0 4px 16px 0 rgba(2, 0, 112, 0.06) !important;
+	}
+	
+	/* Sticky header - use white logo */
+	.sticky-header .logo img,
+	.sticky-header .logo-box .logo img {
+		content: url('images/bull logo.png') !important;
+	}
+	
+	/* Sticky header navigation items - white text */
+	.sticky-header .navigation > li > a {
+		color: #ffffff !important;
+	}
+	
+	.sticky-header .navigation > li > a:hover,
+	.sticky-header .navigation > li.current > a {
+		color: #01eb00 !important;
+	}
+	
+	/* Main box container */
+	.header-style-four .main-box,
+	.main-header .main-box {
+		padding: 15px 0 !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	
+	/* Center navigation menu items */
+	.header-style-four .nav-outer,
+	.main-header .nav-outer {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		flex: 1 !important;
+	}
+	
+	.header-style-four .navigation,
+	.main-header .navigation {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		margin: 0 auto !important;
+	}
+	
+	/* Logo and button positioning */
+	.header-style-four .logo-box,
+	.main-header .logo-box {
+		flex-shrink: 0 !important;
+	}
+	
+	.header-style-four .outer-box,
+	.main-header .outer-box {
+		flex-shrink: 0 !important;
+	}
+	
+	/* Button styling enhancement */
+	.header-style-four .header-btn,
+	.main-header .header-btn {
+		box-shadow: 0 4px 12px 0 rgba(1, 0, 80, 0.25) !important;
+		transition: all 0.3s ease !important;
+	}
+	
+	.header-style-four .header-btn:hover,
+	.main-header .header-btn:hover {
+		transform: translateY(-2px) !important;
+		box-shadow: 0 6px 20px 0 rgba(1, 0, 80, 0.35) !important;
+	}
+	
+	/* BullNet Brand Colors */
+	:root {
+		--bullnet-primary: #010050;
+		--bullnet-secondary: #01eb00;
+	}
+	
+	/* Remove Red Colors */
+	:root {
+		--theme-color3: #010050 !important;
+		--theme-color-v2: #010050 !important;
+		--theme-color4: #020070 !important;
+	}
+	
+	/* Override all gradient patterns using theme-color3 and theme-color4 */
+	* {
+		--theme-color3: #010050 !important;
+		--theme-color4: #020070 !important;
+	}
+	
+	/* Primary Color - Dark Blue (#010050) */
+	.theme-btn,
+	.btn-style-one,
+	.header-btn,
+	.nav-link.active,
+	.nav-link:hover,
+	.sec-title-v4 h2,
+	.sec-title-v4 .sub-title,
+	.product-details__title span,
+	.price,
+	.navigation > li > a:hover,
+	.navigation > li.current > a,
+	.page-title .title,
+	.sec-title-v4 .icon-box {
+		color: #010050 !important;
+	}
+	
+	/* Buttons with gradient background and white text */
+	.theme-btn,
+	.btn-style-one,
+	.header-btn,
+	.scroll-to-top,
+	.ui-btn.theme-btn,
+	button.theme-btn,
+	a.theme-btn {
+		background: linear-gradient(to right, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to right, #010050, #020070) !important;
+		background: -webkit-gradient(linear, left top, right top, from(#010050), to(#020070)) !important;
+		border-color: #010050 !important;
+		color: #ffffff !important;
+	}
+	
+	.theme-btn:hover,
+	.btn-style-one:hover,
+	.header-btn:hover,
+	.scroll-to-top:hover,
+	.ui-btn.theme-btn:hover,
+	button.theme-btn:hover,
+	a.theme-btn:hover {
+		background: linear-gradient(to right, #020070, #030090) !important;
+		-webkit-background: linear-gradient(to right, #020070, #030090) !important;
+		background: -webkit-gradient(linear, left top, right top, from(#020070), to(#030090)) !important;
+		border-color: #020070 !important;
+		color: #ffffff !important;
+	}
+	
+	/* Ensure button text is always white */
+	.theme-btn *,
+	.btn-style-one *,
+	.header-btn *,
+	.scroll-to-top * {
+		color: #ffffff !important;
+	}
+	
+	.nav-link.active,
+	.nav-link:hover {
+		border-bottom-color: #010050 !important;
+	}
+	
+	/* Secondary Color - Green (#01eb00) for Accents */
+	.read-more,
+	.read-more:hover,
+	.icon-box i,
+	.cheak-box-sec .checkmark:after,
+	.social-list img,
+	.rating i.fa-star,
+	.whatsapp-order-btn,
+	.ui-btn.whatsapp-order-btn {
+		color: #01eb00 !important;
+	}
+	
+	.read-more:hover {
+		border-color: #01eb00 !important;
+	}
+	
+	.whatsapp-order-btn:hover,
+	.ui-btn.whatsapp-order-btn:hover {
+		background-color: #01eb00 !important;
+		border-color: #01eb00 !important;
+		color: #fff !important;
+	}
+	
+	/* Remove any red elements */
+	[style*="red"],
+	[style*="#ff"],
+	[style*="#f00"],
+	[style*="#e00"],
+	[style*="#d00"],
+	[style*="#fa0006"],
+	[style*="#ff1a1a"] {
+		color: #010050 !important;
+		background-color: transparent !important;
+	}
+	
+	/* Override red in checkmarks and icons */
+	.fa-check-circle,
+	.fa-check,
+	.checkmark:after {
+		color: #01eb00 !important;
+	}
+	
+	/* Make checkmark images green */
+	.social-list img[src*="cheak"],
+	.social-list img[src*="check"] {
+		filter: hue-rotate(120deg) saturate(2) brightness(1.2);
+	}
+	
+	/* Ensure WhatsApp buttons use green */
+	.fab.fa-whatsapp {
+		color: #01eb00 !important;
+	}
+	
+	/* Mix colors well - use green for success/positive elements */
+	.inner-box .icon-box i,
+	.about-block-four .icon-box i {
+		color: #01eb00 !important;
+	}
+	
+	/* Use dark blue for text, green for icons and accents */
+	.sec-title-v4 .icon-box i {
+		color: #01eb00 !important;
+	}
+	
+	/* Comprehensive Red Color Override - Replace all red with brand color */
+	* {
+		--theme-color3: #010050 !important;
+		--theme-color-v2: #010050 !important;
+	}
+	
+	/* Override red backgrounds and gradients from style.css - Use gradients */
+	*[style*="background-color: #ff0000"],
+	*[style*="background-color:#ff0000"],
+	*[style*="background: #ff0000"],
+	*[style*="background:#ff0000"],
+	*[style*="background-color: #fa0006"],
+	*[style*="background-color:#fa0006"],
+	*[style*="background: #fa0006"],
+	*[style*="background:#fa0006"],
+	*[style*="background-color: #ff1a1a"],
+	*[style*="background-color:#ff1a1a"],
+	*[style*="background: #ff1a1a"],
+	*[style*="background:#ff1a1a"] {
+		background: linear-gradient(to right, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to right, #010050, #020070) !important;
+	}
+	
+	/* Override red in linear gradients */
+	*[style*="linear-gradient"][style*="#fa0006"],
+	*[style*="linear-gradient"][style*="#ff0000"],
+	*[style*="linear-gradient"][style*="#ff1a1a"],
+	*[style*="gradient"][style*="#fa0006"],
+	*[style*="gradient"][style*="#ff0000"],
+	*[style*="gradient"][style*="#ff1a1a"] {
+		background: linear-gradient(to right, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to right, #010050, #020070) !important;
+	}
+	
+	/* Override CSS classes that use red */
+	.theme-color3,
+	.theme-color-v2,
+	.color-red,
+	.red-color,
+	.text-red {
+		color: #010050 !important;
+	}
+	
+	.bg-red,
+	.bg-theme-color3,
+	.bg-theme-color-v2,
+	.background-red {
+		background: linear-gradient(to right, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to right, #010050, #020070) !important;
+	}
+	
+	/* Icon boxes - gradient background (preserve original border-radius) */
+	.sec-title-v4 .icon-box {
+		background: #010050;
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		-webkit-background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		border-radius: 50% !important; /* Preserve circular shape */
+	}
+	
+	.about-block-four .icon-box .icon,
+	.deals-block-v3 .inner-box .icon-box .icon {
+		background: #010050;
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		-webkit-background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		/* Preserve original shape from CSS */
+	}
+	
+	.services-section-three .service-block-three .inner-box .icon-box {
+		background: transparent !important;
+		border-radius: 50% !important;
+		/* Make icon-box circular */
+	}
+	
+	.services-section-three .service-block-three .inner-box .icon-box:before {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		background-image: none !important;
+		background: #010050 !important;
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+		-webkit-background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+		border-radius: 50% !important;
+		/* Make ::before circular to match */
+		z-index: -1 !important;
+	}
+	
+	.plan-section .tabs-sec .nav-pills .nav-link.active .icon-box,
+	.plan-section .tabs-sec .nav-pills .nav-link:hover .icon-box,
+	.plan-section .tabs-sec .nav-pills .nav-link .icon-box {
+		background: #010050;
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		-webkit-background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+		border-radius: 50% !important; /* Preserve circular shape */
+	}
+	
+	/* Override header-top gradient specifically */
+	.header-style-four .header-top,
+	.header-top {
+		background: linear-gradient(to left, #010050, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to left, #010050, #010050, #020070) !important;
+		background: -webkit-gradient(linear, right top, left top, from(#010050), color-stop(#010050), to(#020070)) !important;
+	}
+	
+	/* Breadcrumbs - white text color */
+	.page-breadcrumb,
+	.page-breadcrumb li,
+	.page-breadcrumb li a {
+		color: #ffffff !important;
+	}
+	
+	.page-breadcrumb li:after {
+		color: #ffffff !important;
+	}
+	
+	/* Page title - white text color */
+	.page-title .title,
+	.page-title h1,
+	.page-title h1.title {
+		color: #ffffff !important;
+	}
+	
+	/* Global override: Replace ALL instances of the gradient pattern using var(--theme-color3) and var(--theme-color4) */
+	* {
+		--theme-color3: #010050 !important;
+		--theme-color4: #020070 !important;
+	}
+	
+	/* Force override for any element that might have this gradient from style.css */
+	.header-btn,
+	.theme-btn,
+	.btn-style-one,
+	.ui-btn.theme-btn,
+	button.theme-btn,
+	a.theme-btn,
+	*[class*="btn-style"],
+	*[class*="theme-btn"]:not(.whatsapp-order-btn),
+	.header-style-four .outer-box .header-btn,
+	.header-style-two .outer-box .header-btn,
+	.header-style-three .outer-box .header-btn,
+	.main-header .outer-box .header-btn {
+		background: -webkit-gradient(linear, right top, left top, from(#010050), color-stop(#010050), to(#020070)) !important;
+		background: linear-gradient(to left, #010050, #010050, #020070) !important;
+		-webkit-background: linear-gradient(to left, #010050, #010050, #020070) !important;
+	}
+	
+	/* Footer background and styling */
+	.footer-v4,
+	.footer-bottom {
+		background-color: #1a1a1a !important;
+		background: #1a1a1a !important;
+		color: #ffffff !important;
+	}
+	
+	.footer-v4 .footer-top {
+		background-color: #0f0f0f !important;
+		background: #0f0f0f !important;
+	}
+	
+	.footer-v4 .footer-bottom p,
+	.footer-v4 .footer-bottom a {
+		color: #ffffff !important;
+	}
+	
+	/* Glassmorphism Form Styling */
+	.testimonial-section-four .form-column .inner-column {
+		background: rgba(255, 255, 255, 0.1) !important;
+		backdrop-filter: blur(20px) !important;
+		-webkit-backdrop-filter: blur(20px) !important;
+		border-radius: 20px !important;
+		padding: 50px 40px !important;
+		border: 1px solid rgba(255, 255, 255, 0.2) !important;
+		box-shadow: 0 8px 32px 0 rgba(1, 0, 80, 0.15),
+					0 4px 16px 0 rgba(1, 235, 0, 0.1),
+					inset 0 1px 0 0 rgba(255, 255, 255, 0.2) !important;
+		position: relative !important;
+		overflow: hidden !important;
+	}
+	
+	/* Add a subtle gradient overlay */
+	.testimonial-section-four .form-column .inner-column::before {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		background: linear-gradient(135deg, rgba(1, 0, 80, 0.05) 0%, rgba(1, 235, 0, 0.05) 100%) !important;
+		pointer-events: none !important;
+		z-index: 0 !important;
+		border-radius: 20px !important;
+	}
+	
+	/* Ensure form content is above the overlay */
+	.testimonial-section-four .form-column .inner-column > * {
+		position: relative !important;
+		z-index: 1 !important;
+	}
+	
+	/* Form input styling with glass effect */
+	.testimonial-section-four .form-column .inner-column .input input,
+	.testimonial-section-four .form-column .inner-column .input textarea,
+	.testimonial-section-four .form-column .inner-column textarea {
+		background: rgba(255, 255, 255, 0.15) !important;
+		backdrop-filter: blur(10px) !important;
+		-webkit-backdrop-filter: blur(10px) !important;
+		border: 1px solid rgba(255, 255, 255, 0.3) !important;
+		border-radius: 12px !important;
+		padding: 15px 20px !important;
+		color: #ffffff !important;
+		font-size: 16px !important;
+		transition: all 0.3s ease !important;
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2) !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column .input input::placeholder,
+	.testimonial-section-four .form-column .inner-column textarea::placeholder {
+		color: rgba(255, 255, 255, 0.7) !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column .input input:focus,
+	.testimonial-section-four .form-column .inner-column .input textarea:focus,
+	.testimonial-section-four .form-column .inner-column textarea:focus {
+		background: rgba(255, 255, 255, 0.25) !important;
+		border-color: rgba(1, 235, 0, 0.5) !important;
+		outline: none !important;
+		box-shadow: 0 4px 16px 0 rgba(1, 235, 0, 0.2),
+					0 0 0 3px rgba(1, 235, 0, 0.1) !important;
+		transform: translateY(-2px) !important;
+	}
+	
+	/* Submit button styling */
+	.testimonial-section-four .form-column .inner-column input[type="submit"],
+	.testimonial-section-four .form-column .inner-column .textarea-column input[type="submit"] {
+		background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+		border: none !important;
+		border-radius: 12px !important;
+		padding: 15px 40px !important;
+		color: #ffffff !important;
+		font-weight: 600 !important;
+		font-size: 16px !important;
+		cursor: pointer !important;
+		transition: all 0.3s ease !important;
+		box-shadow: 0 4px 16px 0 rgba(1, 0, 80, 0.3),
+					0 2px 8px 0 rgba(1, 235, 0, 0.2) !important;
+		text-transform: uppercase !important;
+		letter-spacing: 1px !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column input[type="submit"]:hover,
+	.testimonial-section-four .form-column .inner-column .textarea-column input[type="submit"]:hover {
+		transform: translateY(-3px) !important;
+		box-shadow: 0 8px 24px 0 rgba(1, 0, 80, 0.4),
+					0 4px 12px 0 rgba(1, 235, 0, 0.3) !important;
+	}
+	
+	/* Radio button styling */
+	.testimonial-section-four .form-column .inner-column .cheak-box-sec label {
+		background: rgba(255, 255, 255, 0.1) !important;
+		backdrop-filter: blur(5px) !important;
+		-webkit-backdrop-filter: blur(5px) !important;
+		border: 1px solid rgba(255, 255, 255, 0.2) !important;
+		border-radius: 10px !important;
+		padding: 12px 20px !important;
+		margin-bottom: 10px !important;
+		transition: all 0.3s ease !important;
+		cursor: pointer !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column .cheak-box-sec label:hover {
+		background: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(1, 235, 0, 0.4) !important;
+		transform: translateX(5px) !important;
+	}
+	
+	/* Keep original background image - don't override */
+	/* .testimonial-section-four background image is preserved from style.css */
+	
+	/* Title styling - keep white text for image background */
+	.testimonial-section-four .form-column .inner-column .sec-title-v4 .sub-title {
+		color: #ffffff !important;
+		font-weight: 600 !important;
+		text-transform: uppercase !important;
+		letter-spacing: 2px !important;
+		font-size: 14px !important;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column .sec-title-v4 .title {
+		color: #ffffff !important;
+		font-weight: 700 !important;
+		margin-bottom: 15px !important;
+		text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+	}
+	
+	.testimonial-section-four .form-column .inner-column .sec-title-v4 p {
+		color: rgba(255, 255, 255, 0.95) !important;
+		line-height: 1.8 !important;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+	}
+	
+	/* Contact Image Styling - Make it fit well and align properly */
+	.testimonial-section-four .contact-img-1 {
+		max-width: 100% !important;
+		width: auto !important;
+		height: auto !important;
+		object-fit: contain !important;
+		position: relative !important;
+		left: 0 !important;
+		bottom: 0 !important;
+		margin-top: auto !important;
+		display: block !important;
+	}
+	
+	.testimonial-section-four .row .col-xl-5 {
+		display: flex !important;
+		align-items: flex-end !important;
+		justify-content: center !important;
+		padding-right: 20px !important;
+		padding-bottom: 0 !important;
+		min-height: 100% !important;
+	}
+	
+	/* Ensure the image container aligns with form bottom */
+	.testimonial-section-four .row {
+		align-items: flex-end !important;
+	}
+	
+	/* Responsive adjustments */
+	@media (max-width: 768px) {
+		.testimonial-section-four .form-column .inner-column {
+			padding: 30px 20px !important;
+			border-radius: 15px !important;
+		}
+		
+		.testimonial-section-four .contact-img-1 {
+			max-width: 100% !important;
+			transform: scale(1) !important;
+		}
+	}
+</style>
+
+<link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
+<link rel="icon" href="images/favicon2.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body class="layout4">
+
+<div class="page-wrapper">
+
+	<!-- Preloader -->
+	<div class="preloader"></div>
+
+    <!-- Main Header-->
+	<header class="main-header header-style-four inner-page-style">
+		<!-- Header Top -->
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-content">
+					<ul class="social-links">
+                        <li><span>Follow Us: bul_Inet</span></li>
+                        <li><a href="https://www.instagram.com/bul_Inet" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/bul_Inet" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+		<!-- Header Top -->
+
+        <div class="header-lower">
+            <!-- Main box -->
+            <div class="main-box">
+                <div class="logo-box">
+                    <div class="logo d-none d-lg-block"><a href="index.html"><img src="images/bull-logo-d.png" alt="BullNet" title="BullNet"></a></div>
+                    <div class="logo d-block d-lg-none"><a href="index.html"><img src="images/bull-logo-d.png" alt="BullNet" title="BullNet"></a></div>
+                </div>
+
+                <!--Nav Box-->
+                <div class="nav-outer">    
+                    <nav class="nav main-menu">
+                        <ul class="navigation">
+                            <li><a href="index.html">Home</a></li>
+							<li><a href="page-about.html">About</a></li>
+                            <li><a href="page-services.html">Services</a></li>
+                            <li><a href="shop-products.html">Shop</a></li>
+                            <li class="current"><a href="page-contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+
+                <div class="outer-box">
+                    <a href="page-contact.html" title="" class="header-btn">Get Quote</a>
+                    <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    <!-- Mobile Nav toggler -->
+                </div>
+            </div>
+        </div>
+		
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+		
+			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+			<nav class="menu-box">
+				<div class="upper-box">
+					<div class="nav-logo"><a href="index.html"><img src="images/bull logo.png" alt="BullNet" title="BullNet"></a></div>
+					<div class="close-btn"><i class="icon fa fa-times"></i></div>
+				</div>
+		
+				<ul class="navigation clearfix">
+					<!--Keep This Empty / Menu will come through Javascript-->
+				</ul>
+				<ul class="contact-list-one">
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<i class="icon lnr-icon-phone-handset"></i>
+							<span class="title">Call Now</span>
+							<a href="tel:+250783611372">+250 783 611 372</a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-envelope1"></span>
+							<span class="title">Send Email</span>
+							<a href="mailto:bullnet|td@gmail.com">bullnet|td@gmail.com</a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-map-marker"></span>
+							<span class="title">Location</span>
+							Nyarugenge YYUSSA Plaza, 1st Floor
+						</div>
+					</li>
+				</ul>
+		
+		
+				<ul class="social-links">
+					<li><span>Follow Us: bul_Inet</span></li>
+					<li><a href="https://www.instagram.com/bul_Inet" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.facebook.com/bul_Inet" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+				</ul>
+			</nav>
+		</div><!-- End Mobile Menu -->
+
+
+		<!-- Sticky Header  -->
+		<div class="sticky-header">
+			<div class="auto-container">
+				<div class="inner-container">
+					<!--Logo-->
+					<div class="logo">
+						<a href="index.html" title=""><img src="images/bull logo.png" alt="BullNet" title="BullNet"></a>
+					</div>
+		
+					<!--Right Col-->
+					<div class="nav-outer">
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<div class="navbar-collapse show collapse clearfix">
+								<ul class="navigation clearfix">
+									<!--Keep This Empty / Menu will come through Javascript-->
+								</ul>
+							</div>
+						</nav><!-- Main Menu End-->
+		
+						<!--Mobile Navigation Toggler-->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Sticky Menu -->
+	</header>
+	<!--End Main Header -->
+
+	<!-- Start main-content -->
+	<section class="page-title" style="background-image: url(images/background/page-title.jpg);">
+		<div class="auto-container">
+			<div class="title-outer">
+				<ul class="page-breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li>Contact</li>
+				</ul>
+				<h1 class="title">Contact Us</h1>
+			</div>
+		</div>
+	</section>
+	<!-- end main-content -->
+
+	<!--Contact Details Start-->
+	<section class="testimonial-section-four">
+		<div class="container py-0">
+			<div class="row">
+                <div class="col-xl-5 col-md-6 col-sm-12 d-none d-xl-block">
+                    <img class="contact-img-1 wow fadeInUp" src="images/resource/contact-img-1.png" alt="">
+                </div>
+                <div class="form-column col-xl-7">
+                    <div class="inner-column ms-0 wow fadeInUp mt-0">
+                        <div class="sec-title-v4">
+                            <span class="sub-title">Talk to BullNet</span>
+                            <h2 class="title">Let’s Build Your Next Solution</h2>
+                            <p>Share a few details about your project and our team will recommend the right mix of connectivity, security and IT services for you.</p>
+                        </div>
+                        <form class="row form-column">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="input">
+                                    <input type="text" name="email" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="input">
+                                    <input type="text" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="input">
+                                    <input type="text" name="email" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="input">
+                                    <input type="text" name="email" placeholder="Company Name (optional)">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <h4 class="title">What BullNet services are you interested in?</h4>
+                                <div class="cheak-box-sec">
+                                    <label class="containerr">LAN Setup &amp; Network Solutions
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="containerr">CCTV Installation &amp; Security
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="containerr">Internet/ISP &amp; Consultancy
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                      <label class="containerr">Starlink &amp; Remote Connectivity
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="input">
+                                    <input type="text" name="email" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="textarea-column">
+                                    <textarea placeholder="Message"></textarea>
+                                    <input type="submit" value="Submit Now">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	<!--Contact Details End-->
+
+	<!-- Contact Information Section -->
+	<section class="contact-info-section" style="padding: 80px 0; background-color: #f8f9fa;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+					<div class="contact-info-box text-center">
+						<div class="icon-box" style="width: 80px; height: 80px; margin: 0 auto 20px; border-radius: 50%; background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%); display: flex; align-items: center; justify-content: center;">
+							<i class="lnr-icon-map-marker" style="font-size: 40px; color: #fff;"></i>
+						</div>
+						<h4 class="title">Location</h4>
+						<p>Nyarugenge YYUSSA Plaza<br>1st Floor</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+					<div class="contact-info-box text-center">
+						<div class="icon-box" style="width: 80px; height: 80px; margin: 0 auto 20px; border-radius: 50%; background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%); display: flex; align-items: center; justify-content: center;">
+							<i class="lnr-icon-phone-handset" style="font-size: 40px; color: #fff;"></i>
+						</div>
+						<h4 class="title">Contact</h4>
+						<p><a href="tel:+250783611372" style="color: #010050;">+250 783 611 372</a></p>
+						<p><a href="mailto:bullnet|td@gmail.com" style="color: #010050;">bullnet|td@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+					<div class="contact-info-box text-center">
+						<div class="icon-box" style="width: 80px; height: 80px; margin: 0 auto 20px; border-radius: 50%; background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%); display: flex; align-items: center; justify-content: center;">
+							<i class="fab fa-instagram" style="font-size: 40px; color: #fff;"></i>
+						</div>
+						<h4 class="title">Follow Us</h4>
+						<p>bul_Inet</p>
+						<ul class="social-links" style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+							<li><a href="https://www.instagram.com/bul_Inet" target="_blank" title="Instagram" style="color: #010050; font-size: 24px;"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/bul_Inet" target="_blank" title="Facebook" style="color: #010050; font-size: 24px;"><i class="fab fa-facebook-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Divider: Google Map -->
+	<section>
+		<div class="container-fluid p-0">
+			<div class="row">
+				<!-- Google Map HTML Codes -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843149788316!2d144.9537131159042!3d-37.81714274201087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sbn!2sbd!4v1583760510840!5m2!1sbn!2sbd" data-tm-width="100%" height="500" frameborder="0" allowfullscreen=""></iframe>
+			</div>
+		</div>
+	</section>
+
+    <!-- client-section two -->
+    <section class="client-section-two pt-100">
+        <div class="auto-container">
+            <div class="sec-title-v4">
+                <h2> Brodband Provider</h2>
+            </div>
+            <div class="content-box client">
+                <div class="image-box wow fadeIn">
+                    <figure class="image"><img src="images/resource/client2-1.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="100ms">
+                    <figure class="image"><img src="images/resource/client2-2.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="200ms">
+                    <figure class="image"><img src="images/resource/client2-3.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="300ms">
+                    <figure class="image"><img src="images/resource/client2-4.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="400ms">
+                    <figure class="image"><img src="images/resource/client2-5.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="500ms">
+                    <figure class="image"><img src="images/resource/client2-6.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="600ms">
+                    <figure class="image"><img src="images/resource/client2-6.png" alt=""></figure>
+                </div>
+                <div class="image-box wow fadeIn" data-wow-delay="700ms">
+                    <figure class="image"><img src="images/resource/client2-6.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End client section -->
+
+    <!-- main footer four -->
+    <section class="footer-v4">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-column">
+                        <h4 class="title">Sign up for our <br>newsletter</h4>
+                    </div>
+                    <div class="col-lg-8 contact-info">
+                        <div class="inner-box">
+                            <p>Stay up to update with our latest news and products.</p>
+                            <form>
+                                <input type="text" name="email" placeholder="Enter your email address...">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div><!--contact-info-->
+                </div>
+            </div>
+        </div>
+        <div class="container py-0">
+            <div class="widgets-sections">
+                <div class="footer-title text-center wow fadeInUp">
+                    <img src="images/bull logo.png" alt="BullNet">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 copyright-text text-center text-lg-start">
+                        <p>Copyright © 2024 BullNet. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-4 social-column text-center">
+                        <ul class="social-links">
+                            <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#" title=""><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#" title=""><i class="fa fa-x"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 links-column text-center text-lg-end">
+                        <ul class="other-links">
+                            <li><a href="page-about.html" title="">About</a></li>
+                            <li><a href="page-services.html" title="">Services</a></li>
+                            <li><a href="page-contact.html" title="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End footer section -->
+
+</div><!-- End Page Wrapper -->
+
+
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+<script data-cfasync="false" src="https://html.kodesolution.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script> 
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick-animation.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- form submit -->
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script>
+	(function($) {
+		$("#contact_form").validate({
+			submitHandler: function(form) {
+				var form_btn = $(form).find('button[type="submit"]');
+				var form_result_div = '#form-result';
+				$(form_result_div).remove();
+				form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+				var form_btn_old_msg = form_btn.html();
+				form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+				$(form).ajaxSubmit({
+					dataType:  'json',
+					success: function(data) {
+						if( data.status == 'true' ) {
+							$(form).find('.form-control').val('');
+						}
+						form_btn.prop('disabled', false).html(form_btn_old_msg);
+						$(form_result_div).html(data.message).fadeIn('slow');
+						setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+					}
+				});
+			}
+		});
+	})(jQuery);
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"88f4fa328f314d4c95a104b4a60b2313","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from html.kodesolution.com/2023/satnet-html/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Dec 2025 23:20:45 GMT -->
+</html>

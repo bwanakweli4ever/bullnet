@@ -1,0 +1,534 @@
+/* Home page specific styles - Beautiful Hero Slider */
+.hero-section {
+  padding: 150px 0 120px;
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  /* Sophisticated mesh gradient overlay with background image */
+  background: 
+    radial-gradient(ellipse at top left, rgba(1, 0, 80, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at top right, rgba(2, 0, 112, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(1, 235, 0, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(1, 0, 80, 0.2) 0%, transparent 50%),
+    url('/images/background/banner-v4.jpg');
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, cover;
+  background-position: center, center, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-blend-mode: overlay, overlay, overlay, overlay, normal;
+}
+
+/* Sophisticated gradient overlay with multiple layers */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, rgba(1, 0, 80, 0.85) 0%, rgba(2, 0, 112, 0.9) 50%, rgba(1, 235, 0, 0.1) 100%),
+    radial-gradient(circle at 30% 40%, rgba(1, 235, 0, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(2, 0, 112, 0.2) 0%, transparent 50%);
+  z-index: 0;
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background: 
+      linear-gradient(135deg, rgba(1, 0, 80, 0.85) 0%, rgba(2, 0, 112, 0.9) 50%, rgba(1, 235, 0, 0.1) 100%),
+      radial-gradient(circle at 30% 40%, rgba(1, 235, 0, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 60%, rgba(2, 0, 112, 0.2) 0%, transparent 50%);
+  }
+  50% {
+    background: 
+      linear-gradient(135deg, rgba(1, 0, 80, 0.9) 0%, rgba(2, 0, 112, 0.85) 50%, rgba(1, 235, 0, 0.15) 100%),
+      radial-gradient(circle at 35% 45%, rgba(1, 235, 0, 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 65% 55%, rgba(2, 0, 112, 0.25) 0%, transparent 50%);
+  }
+}
+
+/* Sophisticated animated patterns and particles */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    /* Geometric patterns */
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(1, 235, 0, 0.03) 10px, rgba(1, 235, 0, 0.03) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(2, 0, 112, 0.03) 10px, rgba(2, 0, 112, 0.03) 20px),
+    /* Animated particles */
+    radial-gradient(circle at 20% 30%, rgba(1, 235, 0, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(1, 235, 0, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 10% 80%, rgba(2, 0, 112, 0.08) 0%, transparent 35%),
+    radial-gradient(circle at 90% 20%, rgba(1, 235, 0, 0.08) 0%, transparent 40%);
+  z-index: 0;
+  animation: sophisticatedParticles 25s ease-in-out infinite, patternMove 30s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes sophisticatedParticles {
+  0%, 100% {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(1, 235, 0, 0.03) 10px, rgba(1, 235, 0, 0.03) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(2, 0, 112, 0.03) 10px, rgba(2, 0, 112, 0.03) 20px),
+      radial-gradient(circle at 20% 30%, rgba(1, 235, 0, 0.12) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(1, 235, 0, 0.1) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 10% 80%, rgba(2, 0, 112, 0.08) 0%, transparent 35%),
+      radial-gradient(circle at 90% 20%, rgba(1, 235, 0, 0.08) 0%, transparent 40%);
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  25% {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(1, 235, 0, 0.04) 10px, rgba(1, 235, 0, 0.04) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(2, 0, 112, 0.04) 10px, rgba(2, 0, 112, 0.04) 20px),
+      radial-gradient(circle at 25% 35%, rgba(1, 235, 0, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 75% 65%, rgba(1, 235, 0, 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 15% 75%, rgba(2, 0, 112, 0.1) 0%, transparent 35%),
+      radial-gradient(circle at 85% 25%, rgba(1, 235, 0, 0.1) 0%, transparent 40%);
+    transform: translateY(-15px) scale(1.05) rotate(1deg);
+  }
+  50% {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(1, 235, 0, 0.03) 10px, rgba(1, 235, 0, 0.03) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(2, 0, 112, 0.03) 10px, rgba(2, 0, 112, 0.03) 20px),
+      radial-gradient(circle at 30% 40%, rgba(1, 235, 0, 0.12) 0%, transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(1, 235, 0, 0.1) 0%, transparent 45%),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 20% 70%, rgba(2, 0, 112, 0.08) 0%, transparent 35%),
+      radial-gradient(circle at 80% 30%, rgba(1, 235, 0, 0.08) 0%, transparent 40%);
+    transform: translateY(-25px) scale(1.1) rotate(0deg);
+  }
+  75% {
+    background-image: 
+      repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(1, 235, 0, 0.04) 10px, rgba(1, 235, 0, 0.04) 20px),
+      repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(2, 0, 112, 0.04) 10px, rgba(2, 0, 112, 0.04) 20px),
+      radial-gradient(circle at 25% 35%, rgba(1, 235, 0, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 75% 65%, rgba(1, 235, 0, 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 15% 75%, rgba(2, 0, 112, 0.1) 0%, transparent 35%),
+      radial-gradient(circle at 85% 25%, rgba(1, 235, 0, 0.1) 0%, transparent 40%);
+    transform: translateY(-15px) scale(1.05) rotate(-1deg);
+  }
+}
+
+@keyframes patternMove {
+  0% {
+    background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%, -100% -100%, 50% 50%, -50% -50%, 25% 75%, -25% -25%, 75% 25%;
+  }
+}
+
+.hero-section .auto-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .sub-title {
+  display: inline-block;
+  color: #01eb00;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  padding: 8px 20px;
+  background: rgba(1, 235, 0, 0.1);
+  border-left: 3px solid #01eb00;
+  border-radius: 4px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-section .title {
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out 0.2s both;
+  font-family: var(--title-font);
+}
+
+.hero-section .description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 19px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+  max-width: 580px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out 0.4s both;
+  font-family: var(--text-font2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section .hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-section .hero-buttons {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-section .hero-buttons .theme-btn {
+  padding: 18px 45px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 25px rgba(1, 0, 80, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .hero-buttons .theme-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.hero-section .hero-buttons .theme-btn:hover::before {
+  left: 100%;
+}
+
+.hero-section .hero-buttons .theme-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(1, 0, 80, 0.4);
+}
+
+.hero-section .hero-buttons .btn-style-two {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+.hero-section .hero-buttons .btn-style-two:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #01eb00;
+  color: #01eb00;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(1, 235, 0, 0.3);
+}
+
+.hero-section .hero-image {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-section .hero-image .image {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-section .hero-image {
+  animation: fadeInRight 1s ease-out 0.6s both;
+}
+
+.hero-section .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 
+    0 25px 80px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(1, 235, 0, 0.2);
+  animation: float 6s ease-in-out infinite, glow 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.hero-section .hero-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 
+    0 30px 100px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(1, 235, 0, 0.3);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(1deg);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 
+      0 25px 80px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(1, 235, 0, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 25px 80px rgba(0, 0, 0, 0.4),
+      0 0 60px rgba(1, 235, 0, 0.3);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 80px 0 60px;
+  }
+  
+  .hero-section .title {
+    font-size: 42px;
+  }
+  
+  .hero-section .description {
+    font-size: 16px;
+  }
+  
+  .hero-section .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-section .hero-image {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section .title {
+    font-size: 32px;
+  }
+  
+  .hero-section .hero-buttons .theme-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+/* Plan Section Styling */
+.plan-section {
+  padding: 100px 0;
+  position: relative;
+  background-color: #f8f9fa;
+}
+
+.plan-section .sec-title-v4 .sub-title {
+  color: #010050 !important;
+  font-weight: 800;
+}
+
+.plan-section .tabs-sec .nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px rgba(1, 0, 80, 0.1);
+  border-radius: 50px;
+  padding: 10px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px 8px 8px;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link.active {
+  background: linear-gradient(to left, #010050, #010050, #020070) !important;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link.active span {
+  color: #ffffff !important;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link.active .icon-box {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link.active .icon-box i {
+  background: linear-gradient(to left, #010050, #020070) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link .icon-box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e3e3e3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link .icon-box i {
+  font-size: 28px;
+  color: #010050;
+}
+
+.plan-section .tabs-sec .nav-pills .nav-link span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.plan-section .tab-content .tab-pane {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.plan-section .Internat-area {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px rgba(1, 0, 80, 0.1);
+  border-radius: 50px;
+  padding: 20px 35px;
+  margin-bottom: 25px;
+  gap: 30px;
+}
+
+.plan-section .Internat-area .content-box {
+  position: relative;
+  flex: 1;
+}
+
+.plan-section .Internat-area .content-box:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background-color: #e3e3e3;
+}
+
+.plan-section .Internat-area .content-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.plan-section .Internat-area .content-box h4.price {
+  background: linear-gradient(to left, #010050, #020070);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.plan-section .Internat-area .content-box span {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.plan-section .social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.plan-section .social-list li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  color: #454545;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.plan-section .social-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #01eb00;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.plan-section .contact-info .read-more {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(to left, #010050, #010050, #020070);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(1, 0, 80, 0.3);
+}
+
+.plan-section .contact-info .read-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(1, 0, 80, 0.4);
+  color: #ffffff;
+}
+

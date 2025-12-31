@@ -1,0 +1,408 @@
+/* Contact page specific styles */
+
+/* Glassmorphism Form Styling */
+.testimonial-section-four {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('/images/background/banner-v4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.testimonial-section-four::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(1, 0, 80, 0.7) 0%, rgba(2, 0, 112, 0.8) 50%, rgba(1, 235, 0, 0.1) 100%);
+  z-index: 0;
+}
+
+.testimonial-section-four .container {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-section-four .form-column .inner-column {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 20px !important;
+  padding: 50px 40px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px 0 rgba(1, 0, 80, 0.15),
+    0 4px 16px 0 rgba(1, 235, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Add a subtle gradient overlay */
+.testimonial-section-four .form-column .inner-column::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(135deg, rgba(1, 0, 80, 0.05) 0%, rgba(1, 235, 0, 0.05) 100%) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  border-radius: 20px !important;
+}
+
+/* Ensure form content is above the overlay */
+.testimonial-section-four .form-column .inner-column > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Form input styling with glass effect */
+.testimonial-section-four .form-column .inner-column .input input,
+.testimonial-section-four .form-column .inner-column .input textarea,
+.testimonial-section-four .form-column .inner-column textarea,
+.testimonial-section-four .form-column .inner-column .textarea-column textarea {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 15px 20px !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  font-family: var(--text-font3) !important;
+}
+
+.testimonial-section-four .form-column .inner-column .textarea-column {
+  position: relative !important;
+}
+
+.testimonial-section-four .form-column .inner-column .textarea-column textarea {
+  min-height: 150px !important;
+  resize: vertical !important;
+  margin-bottom: 15px !important;
+}
+
+.testimonial-section-four .form-column .inner-column .input input::placeholder,
+.testimonial-section-four .form-column .inner-column textarea::placeholder,
+.testimonial-section-four .form-column .inner-column .textarea-column textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.testimonial-section-four .form-column .inner-column .input input:focus,
+.testimonial-section-four .form-column .inner-column .input textarea:focus,
+.testimonial-section-four .form-column .inner-column textarea:focus,
+.testimonial-section-four .form-column .inner-column .textarea-column textarea:focus {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(1, 235, 0, 0.5) !important;
+  outline: none !important;
+  box-shadow: 0 4px 16px 0 rgba(1, 235, 0, 0.2),
+    0 0 0 3px rgba(1, 235, 0, 0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Submit button styling */
+.testimonial-section-four .form-column .inner-column input[type="submit"],
+.testimonial-section-four .form-column .inner-column .textarea-column input[type="submit"] {
+  background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px 40px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 16px 0 rgba(1, 0, 80, 0.3),
+    0 2px 8px 0 rgba(1, 235, 0, 0.2) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  width: 100% !important;
+  margin-top: 15px !important;
+}
+
+.testimonial-section-four .form-column .inner-column input[type="submit"]:hover,
+.testimonial-section-four .form-column .inner-column .textarea-column input[type="submit"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px 0 rgba(1, 0, 80, 0.4),
+    0 4px 12px 0 rgba(1, 235, 0, 0.3) !important;
+}
+
+/* Radio button styling */
+.testimonial-section-four .form-column .inner-column .cheak-box-sec label {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 10px !important;
+  padding: 12px 20px !important;
+  margin-bottom: 10px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  display: block !important;
+  color: #ffffff !important;
+}
+
+.testimonial-section-four .form-column .inner-column .cheak-box-sec label:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(1, 235, 0, 0.4) !important;
+  transform: translateX(5px) !important;
+}
+
+/* Title styling - keep white text for image background */
+.testimonial-section-four .form-column .inner-column .sec-title-v4 .sub-title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 14px !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.testimonial-section-four .form-column .inner-column .sec-title-v4 .title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.testimonial-section-four .form-column .inner-column .sec-title-v4 p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.testimonial-section-four .form-column .inner-column h4.title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  margin-bottom: 15px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Contact Image Styling - Make it fit well and align properly */
+.testimonial-section-four .contact-img-1 {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  position: relative !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  margin-top: auto !important;
+  display: block !important;
+}
+
+.testimonial-section-four .row .col-xl-5 {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding-right: 20px !important;
+  padding-bottom: 0 !important;
+  min-height: 100% !important;
+}
+
+/* Ensure the image container aligns with form bottom */
+.testimonial-section-four .row {
+  align-items: flex-end !important;
+}
+
+/* Icon box styling for contact info section */
+.contact-info-section .contact-info-box .icon-box {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto 20px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.contact-info-section .contact-info-box .icon-box i {
+  font-size: 40px !important;
+  color: #ffffff !important;
+}
+
+.contact-info-section .sec-title-v4 .title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  font-size: 42px !important;
+}
+
+.contact-info-section .sec-title-v4 .sub-title {
+  color: #01eb00 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 14px !important;
+  display: block !important;
+  margin-bottom: 15px !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.contact-info-section .sec-title-v4 p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  font-size: 18px !important;
+  margin-top: 10px !important;
+}
+
+.contact-info-section .contact-info-box .social-links {
+  list-style: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  margin-top: 15px !important;
+}
+
+.contact-info-section .contact-info-box .social-links li {
+  margin: 0 !important;
+}
+
+/* Get Connection Today Section - Glass Background */
+.contact-info-section {
+  position: relative;
+  padding: 80px 0 !important;
+  background-color: #f8f9fa !important;
+  background-image: url('/images/background/banner-v4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.contact-info-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(1, 0, 80, 0.7) 0%, rgba(2, 0, 112, 0.8) 50%, rgba(1, 235, 0, 0.1) 100%);
+  z-index: 0;
+}
+
+.contact-info-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info-section .contact-info-box {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 20px !important;
+  padding: 40px 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 32px 0 rgba(1, 0, 80, 0.15),
+    0 4px 16px 0 rgba(1, 235, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+}
+
+.contact-info-section .contact-info-box::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(135deg, rgba(1, 0, 80, 0.05) 0%, rgba(1, 235, 0, 0.05) 100%) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  border-radius: 20px !important;
+}
+
+.contact-info-section .contact-info-box > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.contact-info-section .contact-info-box:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 40px 0 rgba(1, 0, 80, 0.2),
+    0 6px 20px 0 rgba(1, 235, 0, 0.15) !important;
+}
+
+.contact-info-section .contact-info-box .title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  margin-bottom: 15px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contact-info-section .contact-info-box p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.contact-info-section .contact-info-box a {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-info-section .contact-info-box a:hover {
+  color: #01eb00 !important;
+  text-shadow: 0 0 10px rgba(1, 235, 0, 0.5) !important;
+}
+
+.contact-info-section .contact-info-box .social-links a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.contact-info-section .contact-info-box .social-links a:hover {
+  color: #01eb00 !important;
+  transform: scale(1.2) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .testimonial-section-four .contact-img-1 {
+    max-width: 95% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-section-four {
+    padding: 60px 0 !important;
+  }
+  
+  .testimonial-section-four .form-column .inner-column {
+    padding: 30px 20px !important;
+    border-radius: 15px !important;
+  }
+  
+  .testimonial-section-four .contact-img-1 {
+    max-width: 100% !important;
+    transform: scale(1) !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .testimonial-section-four .row .col-xl-5 {
+    display: block !important;
+    padding-right: 0 !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .contact-info-section {
+    padding: 60px 0 !important;
+  }
+}

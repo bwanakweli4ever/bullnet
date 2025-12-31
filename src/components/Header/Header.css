@@ -1,0 +1,9 @@
+/* Mobile menu open state */
+.mobile-menu.menu-open {
+  display: block;
+}
+
+.mobile-menu:not(.menu-open) {
+  display: none;
+}
+

@@ -1,0 +1,570 @@
+/* Import all CSS files - MUST be at the top before any other rules */
+@import url('/css/animate.css');
+@import url('/css/bootstrap.min.css');
+@import url('/css/slick.css');
+@import url('/css/slick-theme.css');
+@import url('/css/select2.min.css');
+@import url('/css/swipebox.min.css');
+@import url('/css/swiper-bundle.min.css');
+@import url('/css/style.css');
+
+/* Basic reset to ensure content is visible */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom Logo Size & Brand Colors */
+:root {
+  --bullnet-primary: #010050;
+  --bullnet-secondary: #01eb00;
+  --theme-color3: #010050;
+  --theme-color-v2: #010050;
+  --theme-color4: #020070;
+  /* Professional Fonts */
+  --text-font: "Unbounded", cursive;
+  --title-font: "Unbounded", cursive;
+  --text-font2: "Archivo", sans-serif;
+  --title-font2: "Archivo", sans-serif;
+  --text-font3: "Work Sans", sans-serif;
+  --text-font4: "Rubik", sans-serif;
+}
+
+/* Regular header - dark logo - Reduced size */
+.main-header .logo img {
+  max-width: 120px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Sticky header & Footer - white logo - Reduced size */
+.sticky-header .logo img,
+.mobile-menu .nav-logo img,
+.footer-title img {
+  max-width: 120px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .main-header .logo img {
+    max-width: 100px;
+  }
+  .sticky-header .logo img,
+  .mobile-menu .nav-logo img {
+    max-width: 100px;
+  }
+}
+
+/* Glassmorphism Navigation Menu - Transparent Glass Look - Centered - Similar to Sticky */
+.header-style-four .header-lower,
+.main-header .header-lower {
+  /* From https://css.glass - Similar structure to sticky header but with different colors */
+  background: rgba(1, 235, 0, 0.03) !important;
+  backdrop-filter: blur(30px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+  border: 1px solid rgba(1, 235, 0, 0.27) !important;
+  border-radius: 20px !important;
+  margin: 10px auto !important;
+  max-width: 95% !important;
+  width: calc(100% - 30px) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1),
+    0 4px 16px 0 rgba(0, 0, 0, 0.06) !important;
+  position: relative !important;
+}
+
+/* Remove gradient overlay to allow pure glass effect */
+.header-style-four .header-lower::before,
+.main-header .header-lower::before {
+  display: none !important;
+}
+
+/* Header lower - Consistent height matching sticky header */
+.header-style-four .header-lower,
+.main-header .header-lower {
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Main box layout - Center navigation - Matching sticky header size */
+.header-style-four .main-box,
+.main-header .main-box {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  position: relative !important;
+  height: 70px !important;
+}
+
+/* Logo box - Left side - Aligned with menu - Pushed up */
+.header-style-four .logo-box,
+.main-header .logo-box {
+  flex-shrink: 0 !important;
+  z-index: 2 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  height: 100% !important;
+  padding-top: 8px !important;
+}
+
+.header-style-four .logo-box .logo,
+.main-header .logo-box .logo {
+  display: flex !important;
+  align-items: flex-start !important;
+  height: auto !important;
+  text-decoration: none !important;
+}
+
+.header-style-four .logo-box .logo img,
+.main-header .logo-box .logo img {
+  display: block !important;
+  height: auto !important;
+  max-height: 51px !important;
+  object-fit: contain !important;
+  width: auto !important;
+  margin-top: -14px !important;
+}
+
+/* Ensure only one logo shows */
+.header-style-four .logo-box .logo:not(:first-child),
+.main-header .logo-box .logo:not(:first-child) {
+  display: none !important;
+}
+
+/* Nav outer - Centered - Aligned with logo - Pushed up */
+.header-style-four .nav-outer,
+.main-header .nav-outer {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  z-index: 1 !important;
+  height: 100% !important;
+  padding-top: 8px !important;
+}
+
+.header-style-four .main-menu,
+.main-header .main-menu {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  height: auto !important;
+}
+
+/* Outer box - Right side - Aligned with menu - Pushed up */
+.header-style-four .outer-box,
+.main-header .outer-box {
+  flex-shrink: 0 !important;
+  z-index: 2 !important;
+  margin-left: auto !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  height: 100% !important;
+  padding-top: 8px !important;
+}
+
+/* Navigation menu items - Beautiful elegant styling - Centered */
+.header-style-four .navigation,
+.main-header .navigation,
+.sticky-header .navigation {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  list-style: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.header-style-four .navigation > li,
+.main-header .navigation > li,
+.sticky-header .navigation > li {
+  margin: 0 !important;
+  position: relative !important;
+}
+
+.header-style-four .navigation > li > a,
+.main-header .navigation > li > a {
+  color: #333 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  padding: 8px 16px !important;
+  position: relative !important;
+  display: block !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  letter-spacing: 0.3px !important;
+  font-family: var(--text-font2) !important;
+  line-height: 1.4 !important;
+}
+
+/* Sticky header navigation - Beautiful white text - Matching normal header size */
+.sticky-header .navigation > li > a {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  padding: 8px 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+  font-family: var(--text-font2) !important;
+  line-height: 1.4 !important;
+}
+
+/* Hover background effect for navigation items */
+.header-style-four .navigation > li > a::before,
+.main-header .navigation > li > a::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(107deg, rgba(1, 0, 80, 0.08) 54%, rgba(1, 235, 0, 0.06) 100%) !important;
+  border-radius: 12px !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  z-index: -1 !important;
+}
+
+.sticky-header .navigation > li > a::before {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Underline effect - Adjusted for smaller height */
+.header-style-four .navigation > li > a::after,
+.main-header .navigation > li > a::after,
+.sticky-header .navigation > li > a::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 6px !important;
+  left: 50% !important;
+  transform: translateX(-50%) scaleX(0) !important;
+  width: 70% !important;
+  height: 2px !important;
+  background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%) !important;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 2px 8px rgba(1, 235, 0, 0.4) !important;
+}
+
+.sticky-header .navigation > li > a::after {
+  background: linear-gradient(107deg, rgba(1, 235, 0, 1) 54%, rgba(255, 255, 255, 0.8) 100%) !important;
+  box-shadow: 0 2px 8px rgba(1, 235, 0, 0.6) !important;
+}
+
+/* Hover and active states */
+.header-style-four .navigation > li > a:hover::before,
+.header-style-four .navigation > li.current > a::before,
+.main-header .navigation > li > a:hover::before,
+.main-header .navigation > li.current > a::before,
+.sticky-header .navigation > li > a:hover::before,
+.sticky-header .navigation > li.current > a::before {
+  opacity: 1 !important;
+}
+
+.header-style-four .navigation > li > a:hover::after,
+.header-style-four .navigation > li.current > a::after,
+.main-header .navigation > li > a:hover::after,
+.main-header .navigation > li.current > a::after,
+.sticky-header .navigation > li > a:hover::after,
+.sticky-header .navigation > li.current > a::after {
+  transform: translateX(-50%) scaleX(1) !important;
+}
+
+.header-style-four .navigation > li > a:hover,
+.header-style-four .navigation > li.current > a,
+.main-header .navigation > li > a:hover,
+.main-header .navigation > li.current > a {
+  color: #010050 !important;
+  transform: translateY(-2px) !important;
+}
+
+.sticky-header .navigation > li > a:hover,
+.sticky-header .navigation > li.current > a {
+  color: #01eb00 !important;
+  transform: translateY(-2px) !important;
+  text-shadow: 0 0 10px rgba(1, 235, 0, 0.5) !important;
+}
+
+/* Active state with subtle glow - Similar to sticky but different colors */
+.header-style-four .navigation > li.current > a,
+.main-header .navigation > li.current > a {
+  background: linear-gradient(107deg, rgba(1, 0, 80, 0.1) 54%, rgba(1, 235, 0, 0.05) 100%) !important;
+  box-shadow: 0 4px 12px rgba(1, 0, 80, 0.15) !important;
+}
+
+.sticky-header .navigation > li.current > a {
+  background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(1, 235, 0, 0.2) !important;
+}
+
+/* Header Top - Fixed styling - Smaller size */
+.header-style-four .header-top,
+.main-header .header-top {
+  background: linear-gradient(to left, #010050, #010050, #020070) !important;
+  -webkit-background: linear-gradient(to left, #010050, #010050, #020070) !important;
+  padding: 6px 0 !important;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-top .container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-top-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-top-content .social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top-content .social-links li {
+  margin: 0;
+}
+
+.header-top-content .social-links li span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.header-top-content .social-links li a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.header-top-content .social-links li a:hover {
+  color: #01eb00;
+  background: rgba(1, 235, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Main Header - Always visible at top */
+.main-header {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Hide main header when sticky header is visible */
+.main-header.sticky-active {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(-20px) !important;
+  transition: all 0.3s ease !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Sticky header - matches HTML version behavior */
+.sticky-header {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  padding: 0px 0px;
+  z-index: 99999;
+  background: #010050 !important;
+  backdrop-filter: blur(30px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 20px !important;
+  margin: 10px auto !important;
+  max-width: 95% !important;
+  width: calc(100% - 30px) !important;
+  box-shadow: 0 8px 32px 0 rgba(2, 0, 112, 0.1),
+    0 4px 16px 0 rgba(2, 0, 112, 0.06) !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(-100%);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.sticky-header.fixed-header {
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  pointer-events: auto !important;
+  overflow: visible !important;
+}
+
+.sticky-header .auto-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.sticky-header .inner-container {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 8px !important;
+}
+
+.sticky-header .logo {
+  padding: 0 !important;
+  flex-shrink: 0;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.sticky-header .logo img {
+  max-height: 45px !important;
+  height: auto;
+  width: auto;
+}
+
+.sticky-header .nav-outer {
+  position: relative;
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px !important;
+}
+
+.sticky-header .main-menu {
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sticky-header .main-menu .navigation {
+  display: flex !important;
+  align-items: center !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  gap: 5px !important;
+}
+
+.sticky-header .main-menu .navigation > li {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative !important;
+}
+
+/* Navigation hover/active styles are defined in the main navigation section above */
+
+.sticky-header .outer-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  padding-top: 8px !important;
+}
+
+.sticky-header .header-btn {
+  padding: 10px 25px !important;
+  font-size: 14px !important;
+  white-space: nowrap;
+  margin-top: -28px !important;
+}
+
+/* Sticky header - use white logo */
+.sticky-header .logo img,
+.sticky-header .logo-box .logo img {
+  content: url('/images/bull logo.png') !important;
+}
+
+/* Sticky header navigation styles are defined above in the main navigation section */
+
+/* Button styling enhancement */
+.header-style-four .header-btn,
+.main-header .header-btn {
+  box-shadow: 0 4px 12px 0 rgba(1, 0, 80, 0.25) !important;
+  transition: all 0.3s ease !important;
+  margin-top: -22px !important;
+}
+
+.header-style-four .header-btn:hover,
+.main-header .header-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px 0 rgba(1, 0, 80, 0.35) !important;
+}
+
+/* Breadcrumb and Page Title - White Text */
+.page-breadcrumb,
+.page-breadcrumb li,
+.page-breadcrumb li a,
+.page-breadcrumb li:after {
+  color: #ffffff !important;
+}
+
+.page-title .title,
+.page-title h1,
+.page-title h1.title {
+  color: #ffffff !important;
+}
+
+/* Icon Box - Circular with Gradient */
+.sec-title-v4 .icon-box,
+.about-block-four .icon-box .icon,
+.deals-block-v3 .inner-box .icon-box .icon,
+.services-section-three .service-block-three .inner-box .icon-box,
+.plan-section .tabs-sec .nav-pills .nav-link.active .icon-box,
+.plan-section .tabs-sec .nav-pills .nav-link:hover .icon-box {
+  background: #010050;
+  background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+  -webkit-background: linear-gradient(107deg, rgba(1, 0, 80, 1) 54%, rgba(1, 235, 0, 1) 100%);
+  border-radius: 50% !important;
+}
+
