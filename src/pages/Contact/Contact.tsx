@@ -15,8 +15,48 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted', formData)
+    
+    // Format the message for WhatsApp
+    const whatsappMessage = `*New Contact Form Submission from BullNet Website*
+
+*Name:* ${formData.fullName}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+${formData.company ? `*Company:* ${formData.company}` : ''}
+*Service Interest:* ${formData.service}
+*Location:* ${formData.location}
+
+*Message:*
+${formData.message}
+
+---
+_Submitted via BullNet Website_`
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage)
+    
+    // WhatsApp phone number (without + and spaces)
+    const phoneNumber = '250783611372'
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    
+    // Open WhatsApp in a new tab/window
+    window.open(whatsappUrl, '_blank')
+    
+    // Optional: Show success message or reset form
+    alert('Opening WhatsApp to send your message...')
+    
+    // Reset form after submission
+    setFormData({
+      fullName: '',
+      email: '',
+      phone: '',
+      company: '',
+      service: 'LAN Setup & Network Solutions',
+      location: '',
+      message: '',
+    })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
