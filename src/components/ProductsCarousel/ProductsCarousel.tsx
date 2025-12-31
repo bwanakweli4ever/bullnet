@@ -61,11 +61,6 @@ const ProductsCarousel = () => {
     window.open(whatsappUrl, '_blank')
   }
 
-  const getVisibleProducts = () => {
-    const start = currentIndex * itemsPerSlide
-    return products.slice(start, start + itemsPerSlide)
-  }
-
   return (
     <section className="products-carousel-section">
       <div className="auto-container">
